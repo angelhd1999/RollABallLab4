@@ -60,6 +60,9 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
+        } else if (other.gameObject.CompareTag("Restart"))
+        {
+            transform.position = new Vector3(0, 0.5f, 0);
         }
     }
 
